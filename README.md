@@ -26,7 +26,9 @@ Nanoshot is available through three channels. Pick whichever fits.
 ### Mac App Store
 
 <!-- Replace the placeholder ID once the app is approved. -->
-[**Download on the Mac App Store**](https://apps.apple.com/app/nanoshot/id0000000000). One-click install, automatic updates handled by macOS.
+[<img src="https://developer.apple.com/assets/elements/badges/download-on-the-mac-app-store.svg" alt="Download on the Mac App Store" height="44">](https://apps.apple.com/app/nanoshot/id0000000000)
+
+One-click install, automatic updates handled by macOS.
 
 ### Homebrew
 
