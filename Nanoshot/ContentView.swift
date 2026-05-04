@@ -13,16 +13,6 @@ struct MenuView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 6) {
-                Image("NanoshotLogo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 16, height: 16)
-                Text("Nanoshot")
-                    .font(.system(size: 13, weight: .semibold))
-                Spacer()
-            }
-
             HStack(spacing: 8) {
                 ForEach(CaptureMode.allCases) { mode in
                     ModeCard(
