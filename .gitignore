@@ -42,3 +42,4 @@ DerivedData/
 .DS_Store
 *.pem
 /.idea
+/Nanoshot.xcodeproj/project.xcworkspace/xcuserdata
