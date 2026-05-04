@@ -22,8 +22,8 @@ final class OnboardingTipController {
     private init() {}
 
     /// Shows the tooltip anchored to the menubar status item.
-    /// If the status item frame can't be located we retry briefly — SwiftUI's
-    /// MenuBarExtra sometimes lags a frame behind app launch.
+    /// If the status item frame can't be located we retry briefly, since
+    /// SwiftUI's MenuBarExtra sometimes lags a frame behind app launch.
     func show() {
         dismiss()
         showWithRetries(remaining: 10)
@@ -114,7 +114,7 @@ final class OnboardingTipController {
             Task { @MainActor in OnboardingTipController.shared.dismiss() }
         }
 
-        // Dismiss on clicks inside our app that aren't on the bubble itself —
+        // Dismiss on clicks inside our app that aren't on the bubble itself,
         // notably the menubar icon that opened the status item.
         localClickMonitor = NSEvent.addLocalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown]) { event in
             if event.window !== OnboardingTipController.shared.window {

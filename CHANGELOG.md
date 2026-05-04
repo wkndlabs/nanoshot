@@ -34,5 +34,5 @@ Initial release.
   default-shortcut conflict.
 - Reset action that clears preferences and relaunches to the initial setup.
 
-[Unreleased]: https://github.com/bick/Nanoshot/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/bick/Nanoshot/releases/tag/v1.0.0
+[Unreleased]: https://github.com/wkndlabs/nanoshot/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/wkndlabs/nanoshot/releases/tag/v1.0.0

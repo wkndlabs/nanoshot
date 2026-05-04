@@ -165,6 +165,21 @@ Before opening a PR:
 - Build the `Nanoshot` scheme in Xcode; the project should compile with no warnings
 - Manually run the feature you touched (capture modes, preview, hotkey rebinding, settings, onboarding)
 
+## Repo layout
+
+The Mac app lives at the repo root: `Nanoshot/` (Swift sources), `Nanoshot.xcodeproj/`, `Casks/` (Homebrew cask), `assets/` (logo + icon source).
+
+The supporting website lives in `web/` — a [Next.js](https://nextjs.org) app for the landing page and `/docs`. Documentation source-of-truth is `docs/*.md` at the repo root; the web app reads those at build time and renders them at `/docs/[slug]`.
+
+```sh
+cd web
+npm install
+npm run dev    # http://localhost:3000
+npm run build
+```
+
+To add or edit a doc, drop / edit a `.md` file in `docs/`. The H1 becomes the page title and the filename becomes the route slug. Rebuild to pick up changes.
+
 ## License
 
 MIT. See [`LICENSE`](LICENSE).

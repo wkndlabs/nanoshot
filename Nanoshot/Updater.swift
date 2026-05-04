@@ -17,10 +17,10 @@ import Combine
 final class Updater: ObservableObject {
     static let shared = Updater()
 
-    // Fill these in with the GitHub repo that hosts Nanoshot releases. Releases
-    // must attach a `.zip` asset containing the packaged `Nanoshot.app`.
-    static let githubOwner = "bick"
-    static let githubRepo = "Nanoshot"
+    // GitHub repo that hosts Nanoshot releases. Each release must attach a
+    // `.zip` asset containing the packaged `Nanoshot.app`.
+    static let githubOwner = "wkndlabs"
+    static let githubRepo = "nanoshot"
 
     enum Status: Equatable {
         case idle
